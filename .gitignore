@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Data, checkpoints, logs (too large for git)
+data/
+checkpoints/
+runs/
+wandb/
+
+# OS
+.DS_Store
+
+# Local-only notes
+CLAUDE.md
