@@ -7,10 +7,10 @@ __pycache__/
 .ruff_cache/
 
 # Data, checkpoints, logs (too large for git)
-data/
-checkpoints/
-runs/
-wandb/
+/data/
+/checkpoints/
+/runs/
+/wandb/
 
 # OS
 .DS_Store
