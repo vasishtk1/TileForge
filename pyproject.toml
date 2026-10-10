@@ -5,7 +5,9 @@ description = "A diffusion model trained from scratch that generates seamless ga
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "pillow>=10",
     "pyyaml>=6",
+    "remotezip>=0.12",
     "requests>=2.31",
 ]
 
