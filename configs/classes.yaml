@@ -1,0 +1,65 @@
+# Which ambientCG textures TileForge uses, and how they map to class labels.
+#
+# Each class lists the ambientCG categories it takes. Classes are checked top to bottom and the
+# first match wins, so a class with an `also_tagged` rule must come before the class it takes
+# textures from.
+
+source: ambientcg
+download_attribute: 1K-JPG
+
+classes:
+  # --- Terrain ---
+  grass:
+    categories: [Grass]
+    # ambientCG files some grassy textures under Ground; claim the ones tagged "grass".
+    also_tagged: {tag: grass, in_category: Ground}
+  ground:
+    categories: [Ground]
+  rock:
+    categories: [Rock, Rocks]
+  gravel:
+    categories: [Gravel]
+  snow:
+    categories: [Snow]
+
+  # --- Built surfaces ---
+  tiles:
+    categories: [Tiles]
+  paving_stones:
+    categories: [Paving Stones]
+  bricks:
+    categories: [Bricks]
+  concrete:
+    categories: [Concrete]
+  asphalt:
+    categories: [Asphalt]
+  road:
+    categories: [Road]
+  roofing_tiles:
+    categories: [Roofing Tiles]
+  facade:
+    categories: [Facade]
+  terrazzo:
+    categories: [Terrazzo]
+
+  # --- Materials ---
+  wood:
+    categories: [Wood]
+  wood_floor:
+    categories: [Wood Floor]
+  planks:
+    categories: [Planks]
+  metal:
+    categories: [Metal]
+  metal_plates:
+    categories: [Metal Plates]
+  diamond_plate:
+    categories: [Diamond Plate]
+  fabric:
+    categories: [Fabric]
+  leather:
+    categories: [Leather]
+  marble:
+    categories: [Marble]
+  plastic:
+    categories: [Plastic]
